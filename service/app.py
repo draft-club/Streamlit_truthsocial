@@ -58,8 +58,8 @@ max_comments_val = st.sidebar.number_input("Max Comments", min_value=1, value=50
 out_file = st.sidebar.text_input("Output File (Optional)", value="", placeholder="e.g. results.json")
 
 st.sidebar.markdown("---")
-ts_user = st.sidebar.text_input("Truth Social Username", value=os.getenv("TRUTHSOCIAL_USERNAME", "malika_akfif"))
-ts_pass = st.sidebar.text_input("Truth Social Password", value=os.getenv("TRUTHSOCIAL_PASSWORD", "MALIKA2018@akfif"), type="password")
+ts_user = st.sidebar.text_input("Truth Social Username", value=os.getenv("TRUTHSOCIAL_USERNAME", "your_username"))
+ts_pass = st.sidebar.text_input("Truth Social Password", value=os.getenv("TRUTHSOCIAL_PASSWORD", "your_password"), type="password")
 
 
 
