@@ -9,19 +9,7 @@ A comprehensive dashboard for scrapping, analyzing, and exporting posts and comm
 - **Data Export**: Successfully scraped data is saved as structured JSON files for further analysis.
 - **Antigravity Mode**: A fun visual twist for the UI.
 
-## Architecture Data Flow
 
-```mermaid
-graph TD
-    User([User]) -->|Inputs Config & Clicks Run| UI[Streamlit UI (app.py)]
-    UI -->|Calls| Utils[utils.run_script]
-    Utils -->|Executes Subprocess| Script[export_with_comments.py]
-    Script -->|Scrapes Data| API[Truth Social API]
-    API -->|Returns Data| Script
-    Script -->|Writes| JSON[JSON Output File]
-    JSON -->|Reads & Displays| UI
-    UI -->|Download Option| User
-```
 
 ## Installation
 
